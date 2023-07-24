@@ -25,22 +25,12 @@ return new class extends Migration
 
             $table->float('precoVenda');
 
-	    $table->timestamps();
+            $table->timestamps();
 
         });
 
     }
-    /**public function up(): void
-    {
-        Schema::create('produtos', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
-    }*)
-
-    /**
-     * Reverse the migrations.
-     */
+    
     public function down(): void
     {
         Schema::dropIfExists('produtos');
